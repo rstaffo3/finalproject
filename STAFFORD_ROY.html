@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Roy Stafford">
+        <meta name="description" content="This is a website built for the author Claire Sinagra.">
+        <meta name="keywords" content="Books Author Reading">
+        <title>Claire Sinagra</title>
+        <meta name="robots" content="index,follow">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <a id="skip" href="#main-content">Skip to Main Content</a>
+        <header>
+            <h1>Claire Sinagra</h1>
+            <nav>
+                <div id="menu-toggle">
+                    <h2 class="sr-only">Main Navigation</h2>
+                    <input name="toggle" id="toggle" type="checkbox">
+                    <label for="toggle">Menu</label>
+                        <ul>
+                            <li class="active"><a href="#">About</a></li>
+                            <li><a href="#">Books</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                </div>
+            </nav>
+        </header>
+        <main id="menu-toggle">
+            <section id="about">
+                    <h2>About</h2>
+                    <p>Claire lives in the Rocky Mountains with her husband, an exceptionally perfect dog, and an attack cat.</p>
+            </section>
+            <section id="books">
+                    <h2>Books</h2>
+                    <p>Claire&#39;s books have received starred reviews in Publishers Weekly, Library Journal, and Booklist. She is a New York Times and a USA Today bestseller and a RITA® winner.</p>
+                    <div id="silly">
+                        <img src="images/Sily-Space.svg" alt="Cover of book titles Silly Space. Shows a backdrop of stars with planets stacked vertically on the cover.">
+                        <h3>Silly Space</h3>
+                        <p>The planets were circling the Sun, staring into space, until suddenly they spot something else in their Solar System. What could it be? Who could it be? The planets have no idea but they're circling to find out.</p>
+                        <h4>2021</h4>>
+                    </div>
+                    <div id="pretty">
+                        <img src="images/Pretty-Plants.svg" alt="Book cover of cherry blossom branches with brown and tan birds perched on them.">
+                        <h3>Pretty Plants</h3>
+                        <p>One tiny dandelion seed wants to hold onto its dandelion home, until the winter wind carries it away. The seed worries it won't be able to find its place in such a vast and frightening world. But everything is much more beautiful than it ever thought, and perhaps finding a new home isn't such a bad thing after all.</p>
+                        <h4>2020</h4>
+                    </div>
+                    <div id="happy">
+                        <img src="images/Happy-Hello.svg" alt="Cover shows three friends that look happy with their hand on eachothers shoulder.">
+                        <h3>Happy Hello</h3>
+                        <p>Is it possible to find happiness in times of chaos and confusion?Yes! It is possible!Use these practices and techniques and find happiness each day. A workbook/activity book full of interactive fun!</p>
+                        <h4>2019</h4>
+                    </div>
+                    <div id="freddy">
+                        <img src="images/Freddys-Feelings.svg" alt="Cover shows a teal, tan, and gray mixture of colors showing a female with her eyes closed.">
+                        <h3>Freddy&#39;s Feelings</h3>
+                        <p>How to teach kids about emotions and feelings? Like teaching them everything else - using clear words, familiar situations, exciting pictures and a lot of hands-on activities (games, puzzles, coloring pages, etc.). </p>
+                        <h4>2018</h4>
+                    </div>
+            </section>
+            <section id="events">
+                <h2>Events</h2>
+                <p>Get an autographed book at Claire&#39;s bookstore events or hear her read her books at library events. </p>
+                    <div id="SanDiego">
+                        <h4>San Diego</h4>
+                        <p>Saturday, January 8, 2022<br>11:00 AM -- 2:00 PM</p>
+                        <address>
+                            Bob's Bookstore<br>
+                            123 Bob Street<br>
+                            San Diego, CA 89978
+                        </address>
+                        <button type="button">TICKETS</button>
+                    </div>
+                    <div id="SantaClara">
+                        <h4>Santa Clara</h4>
+                        <p>Saturday, January 15, 2022<br>1:00 -- 4:00 PM</p>
+                        <address>
+                            Barnes & Noble<br>
+                            5678 Books Ave.<br>
+                            Santa Clara, CA 89813
+                        </address>
+                        <button type="button">TICKETS</button>
+                    </div>
+                    <div id="SantaBarbara">
+                        <h4>Santa Barbara</h4>
+                        <p>Saturday, January 21, 2022<br>9:00 -- 10:30 AM</p>
+                        <address>
+                            Santa Barbara Library<br>
+                            286 Main Street<br>
+                            Santa Barbara, CA 89173
+                        </address>
+                        <button type="button">TICKETS</button>
+                    </div>
+                    <div id="SanFrancisco">
+                        <h4>San Francisco</h4>
+                        <p>Saturday, January 28, 2022<br>10:00 -- 11:30 AM</p>
+                        <address>
+                            San Francisco Library<br>
+                            438 Groovy Blvd.<br>
+                            San Francisco, CA 81786
+                        </address>
+                        <button type="button">TICKETS</button>
+                    </div>
+            </section>
+            <section id="newsletter">
+                <h2>Newsletter Sign Up</h2>
+                <form>
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name">
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email" placeholder="Email Address">
+                    <button type="button">Sign Up</button>
+                  </form>
+            </section>
+            <section id="company">
+                <h2>Claire Sinagra, Inc</h2>
+                <p>All books and events are copyright Claire Sinagra, Inc.</p>
+                <div id="socials">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <line x1="8" y1="11" x2="8" y2="16" />
+                        <line x1="8" y1="8" x2="8" y2="8.01" />
+                        <line x1="12" y1="16" x2="12" y2="11" />
+                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="4" />
+                        <path d="M10 9l5 3l-5 3z" />
+                    </svg>
+                </div>
+                <div id="booklist">
+                    <h4>Books</h4>
+                    <ul>
+                        <li>Silly Space</li>
+                        <li>Pretty Plants</li>
+                        <li>Happy Hello</li>
+                        <li>Freddy&#39;s Feelings</li>
+                    </ul>
+                </div>
+                <div id="eventlist">
+                    <h4>Events</h4>
+                    <ul>
+                        <li>San Diego</li>
+                        <li>Santa Clara</li>
+                        <li>Santa Barbara</li>
+                        <li>San Francisco</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <p>&copy; 2020 Claire Sinagra. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
