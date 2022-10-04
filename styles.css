@@ -153,18 +153,61 @@ img {
 }
 
 .tickets {
-	margin-left: 2.5%;
 	margin-top: 1%;
-	margin-bottom: 5%;
+	padding: 5% 10% 5% 10%;
+	margin-bottom: 1%;
+	margin-left: -5%;
 }
 
-address {
+#SanDiego {
+	border-bottom: 3px solid black;
+	width: 80%;
 	margin-left: 5%;
 }
 
-#events p, #events h4 {
+#SanDiego p {
+	margin: 0;
+}
+
+#SantaClara {
+	border-bottom: 3px solid black;
+	width: 80%;
+	margin-left: 5%;		
+}
+
+#SantaClara p {
+	margin: 0;
+}
+
+#SantaBarbara {
+	border-bottom: 3px solid black;
+	width: 80%;
+	margin-left: 5%;
+}
+
+#SantaBarbara p {
+	margin: 0;
+}
+
+#SanFrancisco {
+	border-bottom: 3px solid black;
+	width: 80%;
+	margin-left: 5%;
+}
+
+#SanFrancisco p {
+	margin: 0;
+}
+
+#events p {
 	padding: 0;
-	margin-left: 5%;
+	text-align: left;
+}
+
+#events h4 {
+	padding: 0;
+	padding-bottom: 3%;
+	padding-top: 3%;
 	text-align: left;
 }
 
@@ -174,18 +217,84 @@ address {
 	padding-bottom: 20%;
 }
 
-.bar {
-	border: 1px solid black;
+
+
+#newsletter input {
 	width: 90%;
-	margin-bottom: 5%;
-	text-align: center;
+	margin-left: 5%;
+	padding: 2%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+#newsletter label {
 	margin-left: 5%;
 }
 
+#newsletter button {
+	width: 90%;
+	margin-left: 5%;
+	padding: 2%;
+	background-color: #D74452;
+	color: white;
+}
+
+#newsletter h2 {
+	padding-bottom: 5%;
+}
 
 
+#socials {
+	margin-left: 30%;
+	padding-bottom: 5%;
+}
 
+#booklist, #booklist h4 {
+	display: inline-block;
+	text-align: center;
+	margin-left: 10%;
+	padding: 5%;
+}
 
+#eventlist, #eventlist h4 {
+	display: inline-block;
+	text-align: center;
+	padding: 5%;
+}
+
+#company li {
+	padding-bottom: 15%;
+}
+
+#company h4 {
+	padding: 10%;
+}
+
+.shortbar {
+	border: 1px solid black;
+	width: 90%;
+	margin-bottom: 15%;
+	text-align: center;
+	margin-left: 6%;
+}
+
+footer {
+	background-color: #DAD3B7;
+	padding: 10%;
+	text-align: center;
+}
+
+footer a {
+	color: black;
+	padding: 5%;
+	font-weight: bold;
+}
+
+footer p {
+	max-width: 100%;
+	margin-left: -2%;
+	margin-top: 10%;
+}
 
 .top-nav {
 	display: flex;
@@ -224,12 +333,16 @@ address {
   #menu-toggle {
 	display: none;
   }
+
+  #menu li {
+	margin-top: 5%;
+  }
   
   .menu-button,
   .menu-button::before,
   .menu-button::after {
 	display: block;
-	background-color: #fff;
+	background-color: black;
 	position: absolute;
 	height: 4px;
 	width: 30px;
@@ -241,6 +354,11 @@ address {
 	content: '';
 	margin-top: -8px;
   }
+  
+  .menu a {
+	color: black;
+	font-weight: bold;
+}
   
   .menu-button::after {
 	content: '';
@@ -300,10 +418,189 @@ address {
 	  margin: 0;
 	  padding: 0.5em 0;
 	  width: 100%;
-	  color: white;
-	  background-color: #222;
+	  color: black;
+	  background-color: #D74452;
 	}
 	.menu > li:not(:last-child) {
 	  border-bottom: 1px solid #444;
 	}
+  }
+
+  @media screen and (min-width: 768px) {
+	nav {
+		float: right;
+		margin-top: -3%;
+	}
+
+	#grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	img {
+		height: 60%;
+	}
+
+	#eventgrid p {
+		margin-top: 15%;
+	}
+
+	#eventgrid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#events button {
+		margin-left: 60%;
+		margin-top: -60%;
+		display: block;
+	}
+
+	#fname {
+		float: left;
+		margin-left: 4%;
+	}
+
+	#lname {
+		float: left;
+		margin-left: 25%;
+	}
+
+	#fname input, #lname input {
+		padding: 10%;
+		width: 200%;
+	}
+
+	#fname label, #lname label {
+		padding-right: 30%;
+	}
+
+	#email {
+		margin-top: 2%;
+	}
+
+	#newsletter button {
+		width: 30%;
+		margin-left: 65%;
+	}
+
+	footer {
+		padding: 5%;
+	}
+
+	footer p {
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		margin-top: -2%;
+	}
+
+	footer a {
+		display: inline;
+		margin: 0;
+		margin-left: 65%;
+		padding: 0;
+	}
+
+	.terms {
+		margin-left: 2%;
+	}
+	
+	#company {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin-top: 5%;
+		margin-left: 5%;
+	}
+
+	#socials {
+		margin-left: 15%;
+	}
+
+	#booklist {
+		margin-left: 25%;
+		width: 60%;
+	}
+
+	#eventlist {
+		width: 60%;
+	}
+
+  }
+
+  @media (min-width: 1280px) {
+	#grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	img {
+		height: 30%;
+	}
+
+	#events button {
+		margin-left: 70%;
+		margin-top: -50%;
+	}
+
+	.form-inline {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+	}
+
+	#fname input {
+		width: 200%;
+	}
+
+	#lname input {
+		width: 200%;
+	}
+
+	#email input {
+		width: 200%;
+		padding: 8%;
+		margin: 0;
+	}
+	
+	#email {
+		margin-left: 20%;
+	}
+
+	#lname {
+		margin-left: 15%;
+	}
+
+	#newsletter button {
+		margin-left: 150%;
+		margin-top: 2%;
+		width: 50%;
+	}
+
+	footer {
+		padding: 0;
+		margin: 0;
+		background-color: #DB9F34;
+		margin-top: -10%;
+	}
+
+	footer p {
+		float: right;
+		margin-top: -5%;
+		margin-right: 5%;
+	}
+
+	footer a {
+		margin-bottom: 5%;
+	}
+	
+
+	#company {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		margin-top: 5%;
+		margin-left: 5%;
+	}
+
+
   }

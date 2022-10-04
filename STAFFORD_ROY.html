@@ -41,6 +41,7 @@
             <section id="books">
                     <h2>Books</h2>
                     <p>Claire&#39;s books have received starred reviews in Publishers Weekly, Library Journal, and Booklist. She is a New York Times and a USA Today bestseller and a RITA® winner.</p>
+                    <div id="grid">
                     <div id="silly">
                         <img src="images/Sily-Space.svg" alt="Cover of book titles Silly Space. Shows a backdrop of stars with planets stacked vertically on the cover.">
                         <h3>Silly Space</h3>
@@ -65,10 +66,12 @@
                         <p>How to teach kids about emotions and feelings? Like teaching them everything else - using clear words, familiar situations, exciting pictures and a lot of hands-on activities (games, puzzles, coloring pages, etc.). </p>
                         <h4>2018</h4>
                     </div>
+                    </div>
             </section>
             <section id="events">
                 <h2>Events</h2>
                 <p>Get an autographed book at Claire&#39;s bookstore events or hear her read her books at library events. </p>
+                <div id="eventgrid">    
                     <div id="SanDiego">
                         <h4>San Diego</h4>
                         <p>Saturday, January 8, 2022<br>11:00 AM -- 2:00 PM</p>
@@ -81,7 +84,6 @@
                         <button type="button" class="tickets">TICKETS</button>
                         </div>
                     </div>
-                    <div class="bar"></div>
                     <div id="SantaClara">
                         <h4>Santa Clara</h4>
                         <p>Saturday, January 15, 2022<br>1:00 -- 4:00 PM</p>
@@ -94,7 +96,6 @@
                         <button type="button" class="tickets">TICKETS</button>
                         </div>
                     </div>
-                    <div class="bar"></div>
                     <div id="SantaBarbara">
                         <h4>Santa Barbara</h4>
                         <p>Saturday, January 21, 2022<br>9:00 -- 10:30 AM</p>
@@ -107,7 +108,6 @@
                             <button type="button" class="tickets">TICKETS</button>
                         </div>
                     </div>
-                    <div class="bar"></div>
                     <div id="SanFrancisco">
                         <h4>San Francisco</h4>
                         <p>Saturday, January 28, 2022<br>10:00 -- 11:30 AM</p>
@@ -120,21 +120,29 @@
                             <button type="button" class="tickets">TICKETS</button>
                         </div>
                     </div>
-                    <div class="bar"></div>
+                </div>
             </section>
             <section id="newsletter">
                 <h2>Newsletter Sign Up</h2>
-                <form>
+                <form class="form-inline">
+                    <div id="fname">
                     <label for="fname">First Name</label><br>
                     <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+                    </div>
+                    <div id="lname">
                     <label for="lname">Last Name</label><br>
                     <input type="text" id="lname" name="lname" placeholder="Last Name">
+                </div>
+                <br style="clear:both;" />
+                <div id="email">
                     <label for="email">Email</label><br>
                     <input type="text" id="email" name="email" placeholder="Email Address">
                     <button type="button">Sign Up</button>
+                </div>
                   </form>
             </section>
             <section id="company">
+                <div id="CompanyInfo">
                 <h2>Claire Sinagra, Inc</h2>
                 <p>All books and events are copyright Claire Sinagra, Inc.</p>
                 <div id="socials">
@@ -160,29 +168,32 @@
                         <path d="M10 9l5 3l-5 3z" />
                     </svg>
                 </div>
+            </div>
                 <div id="booklist">
                     <h4>Books</h4>
+                    <div class="shortbar"></div>
                     <ul>
-                        <li>Silly Space</li>
-                        <li>Pretty Plants</li>
-                        <li>Happy Hello</li>
-                        <li>Freddy&#39;s Feelings</li>
+                        <li><a href=#silly>Silly Space</a></li>
+                        <li><a href=#pretty>Pretty Plants</a></li>
+                        <li><a href=#happy>Happy Hello</a></li>
+                        <li><a href=#freddy>Freddy&#39;s Feelings</a></li>
                     </ul>
                 </div>
                 <div id="eventlist">
                     <h4>Events</h4>
+                    <div class="shortbar"></div>
                     <ul>
-                        <li>San Diego</li>
-                        <li>Santa Clara</li>
-                        <li>Santa Barbara</li>
-                        <li>San Francisco</li>
+                        <li><a href=#SanDiego>San Diego</a></li>
+                        <li><a href=#SantaClara>Santa Clara</a></li>
+                        <li><a href=#SantaBarbara>Santa Barbara</a></li>
+                        <li><a href=#SanFrancisco>San Francisco</a></li>
                     </ul>
                 </div>
             </section>
         </main>
         <footer>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            <a href="#" class="privacy">Privacy Policy</a>
+            <a href="#" class="terms">Terms of Service</a>
             <p>&copy; 2020 Claire Sinagra. All Rights Reserved.</p>
         </footer>
     </body>
